@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "rameshtest-f25de": {
+      "hosting": {
+        "heartfulnesstestingapp": [
+          "heartfulnesstestingapp"
+        ]
+      }
+    }
+  }
+}
