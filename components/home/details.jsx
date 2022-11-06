@@ -12,7 +12,7 @@ export default function Details() {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h3 className="header-tag header-padding">Heartfulness</h3>
+              <h3 className="header-tag header-padding">Heartfulness Testing</h3>
               <p className="home-content home-color">
                 Heartfulness is a way of life which awakens our inner potential
                 and develops enhanced awareness. The Heartfulness practice
