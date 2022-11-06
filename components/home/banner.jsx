@@ -5,10 +5,10 @@ import Carousel from "react-multi-carousel";
 
 import "react-multi-carousel/lib/styles.css";
 
-import bannerImg from "../../assets/images/home/bannerImg.png";
+import bannerImg from "../../public/assets/images/home/bannerImg.png";
 
 
-import bannerLogo from "../../assets/images/home/banner-logo.png";
+import bannerLogo from "../../public/assets/images/home/banner-logo.png";
 
 
 export default function Banner() {

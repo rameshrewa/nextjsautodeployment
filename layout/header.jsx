@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 
 
-import Logo from "../assets/images/header/header-logo.png";
+import Logo from "../public/assets/images/header/header-logo.png";
 
 export default function Header({  }) {
   return (

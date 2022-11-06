@@ -1,9 +1,9 @@
 import React from "react";
 import Image from 'next/image'
 
-import aboutbg from "../../assets/images/about-bg.svg";
+import aboutbg from "../../public/assets/images/about-bg.svg";
 
-import nursery from "../../assets/images/home/nursery.png";
+import nursery from "../../public/assets/images/home/nursery.png";
 
 
 export default function Details() {

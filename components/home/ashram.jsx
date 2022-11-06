@@ -4,7 +4,7 @@ import React from "react";
 
 import Image from 'next/image'
 
-import ashramImg from "../../assets/images/home/ashram-img.png";
+import ashramImg from "../../public/assets/images/home/ashram-img.png";
 
 export default function Ashram() {
   return (

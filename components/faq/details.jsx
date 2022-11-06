@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 import { Accordion } from "react-bootstrap";
 
-import faqList from "../../assets/data/faq";
+import faqList from "../../public/assets/data/faq";
 
-import aboutbg from "../../assets/images/about-bg.svg";
+import aboutbg from "../../public/assets/images/about-bg.svg";
 
-import faq from "../../assets/images/faq/faq.png";
+import faq from "../../public/assets/images/faq/faq.png";
 
-import faqone from "../../assets/images/faq/faqmazagine.png";
+import faqone from "../../public/assets/images/faq/faqmazagine.png";
 
 export default function Details() {
  

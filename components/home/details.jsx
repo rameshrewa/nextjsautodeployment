@@ -1,7 +1,7 @@
 import React from "react";
 import Image from 'next/image'
 
-import detailsBG from "../../assets/images/details-bg.png";
+import detailsBG from "../../public/assets/images/details-bg.png";
 
 
 export default function Details() {

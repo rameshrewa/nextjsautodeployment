@@ -2,15 +2,15 @@ import React from "react";
 
 import Image from 'next/image'
 
-import footer from "../assets/images/footer/footer-logo.png";
+import footer from "../public/assets/images/footer/footer-logo.png";
 
-import LeftArrow from "../assets/images/footer/Icon ionic-ios-arrow-round-back.png";
+import LeftArrow from "../public/assets/images/footer/Icon ionic-ios-arrow-round-back.png";
 
-import facebook from "../assets/images/icons/facebook.svg";
-import twitter from "../assets/images/icons/twitter.svg";
-import instagram from "../assets/images/icons/instagram.svg";
-import youtube from "../assets/images/icons/youtube.svg";
-import linkedin from "../assets/images/icons/linkedin.svg";
+import facebook from "../public/assets/images/icons/facebook.svg";
+import twitter from "../public/assets/images/icons/twitter.svg";
+import instagram from "../public/assets/images/icons/instagram.svg";
+import youtube from "../public/assets/images/icons/youtube.svg";
+import linkedin from "../public/assets/images/icons/linkedin.svg";
 
 
 export default function Footer({  }) {
