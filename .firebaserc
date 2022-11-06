@@ -1,5 +1,11 @@
 {
-  "projects": {
-    "default": "rameshtest-f25de"
+  "targets": {
+    "rameshtest-f25de": {
+      "hosting": {
+        "heartfulnesstestingapp": [
+          "heartfulnesstestingapp"
+        ]
+      }
+    }
   }
 }
