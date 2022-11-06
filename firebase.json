@@ -1,18 +1,18 @@
 {
   "hosting": {
     "target": "heartfulnesstestingapp",
-    "public": "build",
+    "public": "out",
     "rewrites": [
       {
         "source": "**",
-        "destination": "/server/pages/index.html"
+        "function": "nextApp"
       }
     ],
     "cleanUrls": true
   },
   "functions": {
     "source": ".",
-    "ignore": ["firebase.json", "node_modules", "**/public"],
+    "ignore": ["firebase.json", "node_modules", "**/out"],
     "runtime": "nodejs12"
   }
 }
