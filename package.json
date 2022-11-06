@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build": "next build && next export",
+    "build": "next build",
     "deploy": "firebase deploy --only functions,hosting",
     "lint": "next lint"
   },
