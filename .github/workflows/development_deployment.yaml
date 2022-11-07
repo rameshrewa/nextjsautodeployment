@@ -30,9 +30,10 @@ jobs:
         run: npm install
       - name: npm run build
         run: npm run build --if-present
-        run: npm run export
         env:
           FIREBASE_SERVICE_ACCOUNT_DETAILS: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}  
+      - name: npm run export
+        run: npm run export        
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
