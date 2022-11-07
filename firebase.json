@@ -1,11 +1,11 @@
 {
   "hosting": {
     "target": "heartfulnesstestingapp",
-    "public": "build",
+    "public": "out",
     "rewrites": [
       {
         "source": "**",
-        "destination": "/server/pages/index.html"
+        "destination": "index.html"
       }
     ],
     "cleanUrls": true
