@@ -1,16 +1,10 @@
 
-import React, { useRef, useEffect } from "react";
-
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 import Image from 'next/image'
 import Link from 'next/link'
-
-
-
-
 import Logo from "../public/assets/images/header/header-logo.png";
 
-export default function Header({  }) {
+export default function Header() {
   return (
     <>
     <header id="header" className="header-section sticky" >
@@ -38,18 +32,12 @@ export default function Header({  }) {
                     </NavDropdown>
                    
                  
-                    <Link href="/nursery" className="nav-link">
-                    Nursery
+                    <Link href="/aboutus" className="nav-link">
+                    About Us
                     </Link>
                     <Link href="/faq" className="nav-link">
                     FAQ
-                    </Link>
-
-                    {/* <Link to="/submitQuery" className="nav-link">
-                      Submit queries
-                    </Link> */}
-
-                  
+                    </Link>              
 
                     <Button
                       variant="primary"
@@ -68,3 +56,4 @@ export default function Header({  }) {
     </>
   )
 }
+
