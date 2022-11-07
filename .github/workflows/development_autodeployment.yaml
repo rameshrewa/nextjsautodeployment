@@ -3,11 +3,7 @@
 name: development_autodeployment
 
 # Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "development" ]
-    
+
   repository_dispatch:
     types: development_autodeployment
 
@@ -20,7 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-        checkout: ['development']
       - name: Use Node.js 16.15.1
         uses: actions/setup-node@v1
         with:
