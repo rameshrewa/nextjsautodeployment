@@ -1,3 +1,5 @@
+import Header from '../layout/header';
+import Footer from '../layout/footer';
 import Banner from '../components/home/banner'
 import Details from "../components/home/details";
 import Ashram from "../components/home/ashram";
@@ -9,10 +11,12 @@ import Heartsport from "../components/home/Heartsport"
 import Magazine from "../components/home/Magazine"
 import Contactus from "../components/home/Contactus"
 
-export default function Home({Home}) {
+export default function Home({Home,Menu,Foot}) {
   const { Content } = Home;
   return (
-    <div >
+    <>
+    <Header Header={Menu}/>
+    <div>
     <section id="home">
           <Banner Banner={Content[0]}/>
         </section>
@@ -44,6 +48,8 @@ export default function Home({Home}) {
           <Contactus />
         </section>
     </div>
+    <Footer Footer={Foot}/>
+    </>
   )
 }
 
@@ -53,10 +59,18 @@ export async function getStaticProps() {
   const res = await fetch('http://43.204.232.146:1337/api/pages/?populate=*&filters[Slug][$eq]=home')
   const Home = await res.json()
   
+  const FooterRes = await fetch('http://43.204.232.146:1337/api/footer')
+  const FooterData = await FooterRes.json()
+
+  const MenuRes = await fetch('http://43.204.232.146:1337/api/menus/1?populate=*')
+  const MenuData = await MenuRes.json()
+
   
   return {
     props: {
-      Home: Home.data[0].attributes
+      Home: Home.data[0].attributes,
+      Foot: FooterData.data,
+      Menu: MenuData.data 
     },
   }
 }
