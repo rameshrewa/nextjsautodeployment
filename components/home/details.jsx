@@ -12,7 +12,7 @@ export default function Details() {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h3 className="header-tag header-padding">Heartfulness Testing</h3>
+              <h3 className="header-tag header-padding">Heartfulness</h3>
               <p className="home-content home-color">
                 Heartfulness is a way of life which awakens our inner potential
                 and develops enhanced awareness. The Heartfulness practice
@@ -30,7 +30,7 @@ export default function Details() {
                 daily practice that is immensely rewarding. This precious gift
                 for practice and human transformation is offered free of charge
               </p>
-            
+              <button type="button" className="btn-register btn btn-primary btn btn-primary">Book a Meditation Session Near You</button>
             </div>
             <div className="col-md-6 pad-dada">
               <Image

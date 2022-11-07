@@ -1,5 +1,6 @@
 
 import "../public/assets/styles/theme.scss";
+import "../public/assets/styles/pages/faq.scss";
 import Layout from '../layout/layout'
 
 function MyApp({ Component, pageProps }) {
@@ -9,5 +10,6 @@ function MyApp({ Component, pageProps }) {
     </Layout>
   )
 }
+
 
 export default MyApp
