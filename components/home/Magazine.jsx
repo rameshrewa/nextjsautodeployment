@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import Image from "next/image";
 import magazine from "../../public/assets/images/home/magazine/magazine.png"
 
-export default function Magazine() {
+export default function Magazine({Mgzine}) {
   const magazineLink = () => {
     const openUrl = "https://www.heartfulnessmagazine.com";
 
@@ -25,15 +25,13 @@ export default function Magazine() {
               />
             </div>
             <div className="col-md-6 magazine-padding">
-              <h3 className="header-tag">Heartfulness Magazine</h3>
+              <h3 className="header-tag">{Mgzine?.Title}</h3>
               <br />
               <p className="mazagine-content">
-                Receive useful tips from around the world on lifestyle,
-                relationships, health and well-being, Yoga, Heartfulness and
-                much more
+              {Mgzine?.Content}
               </p>
               <Button className="donate-btn" onClick={magazineLink}>
-                Subscribe
+                {Mgzine?.ButtonText}
               </Button>
             </div>
           </div>

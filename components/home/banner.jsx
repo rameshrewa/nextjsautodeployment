@@ -11,7 +11,7 @@ import bannerImg from "../../public/assets/images/home/bannerImg.png";
 import bannerLogo from "../../public/assets/images/home/banner-logo.png";
 
 
-export default function Banner() {
+export default function Banner({Banner}) {
   const responsive = {
     desktop: {
       breakpoint: {
@@ -43,7 +43,7 @@ export default function Banner() {
                 className="lazyload"
               />
               <hr className="banner-hr" />
-              <h1 className="banner-title">Meditation center in Gurugram</h1>
+              <h1 className="banner-title">{Banner.Title}</h1>
             </div>
           </div>
         </Carousel>
