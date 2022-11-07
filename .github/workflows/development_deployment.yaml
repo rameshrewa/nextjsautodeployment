@@ -29,9 +29,8 @@ jobs:
       - name: npm install
         run: npm install
       - name: npm run build
-        run: npm run build
-       - name: npm run export
-        run: npm run export  
+        run: npm run build --if-present
+        run: npm run export
         env:
           FIREBASE_SERVICE_ACCOUNT_DETAILS: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}  
       - name: Deploy to Firebase
