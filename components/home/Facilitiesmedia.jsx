@@ -3,8 +3,6 @@ import Carousel from "react-multi-carousel";
 
 import "react-multi-carousel/lib/styles.css";
 
-import PropTypes from "prop-types";
-
 import Link from 'next/link'
 
 import Image from "next/image";
@@ -115,12 +113,7 @@ function Facilitiesmedia() {
       </div>
     );
   };
-
-  ButtonGroup.propTypes = {
-    next: PropTypes.func.isRequired,
-    previous: PropTypes.func.isRequired,
-  };
-
+  
   return (
     <div className="facilities-section">
       <div className="container">

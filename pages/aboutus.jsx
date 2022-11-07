@@ -1,7 +1,6 @@
 import Nursery from '../components/aboutus/details'
 
-export default function AboutUs(props) {
-  console.log("props",props);
+export default function AboutUs() {
   return (
     <div >
     <section id="home">
