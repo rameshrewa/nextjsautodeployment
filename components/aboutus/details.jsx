@@ -2,9 +2,7 @@ import React from "react";
 import Image from 'next/image'
 
 import aboutbg from "../../public/assets/images/about-bg.svg";
-
 import nursery from "../../public/assets/images/home/nursery.png";
-
 
 export default function Details() {
  
@@ -14,7 +12,8 @@ export default function Details() {
       <div>
           <div className="abtimg">
             <Image src={aboutbg} alt="aboutbg" className="lazyload" />
-            <p className="text">Facilities</p>
+            <p className="text">About Us
+</p>
           </div>
         </div>
         <div className="about-sec padding-abt">
