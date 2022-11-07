@@ -4,7 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Logo from "../public/assets/images/header/header-logo.png";
 
-export default function Header() {
+export default function Header({Header}) {
+  const { attributes } = Header
   return (
     <>
     <header id="header" className="header-section sticky" >
@@ -21,24 +22,13 @@ export default function Header() {
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                   <Nav className="ms-auto">
-                    <NavDropdown title="Home" id="basic-nav-dropdown">
-                      <NavDropdown.Item  to="/">
-                        <span className="header-link">Heartfulness</span>
-                      </NavDropdown.Item>
-                      <NavDropdown.Divider />
-                      <NavDropdown.Item  to="/aboutus">
-                        <span className="header-link">About Us</span>
-                      </NavDropdown.Item>
-                    </NavDropdown>
-                   
-                 
-                    <Link href="/aboutus" className="nav-link">
-                    About Us
+                  {attributes.Menu_Item?.map((item) => {
+                    return(
+                      <Link key ={item.id} href={item.Page_Url} className="nav-link">
+                    {item.Page_Title}
                     </Link>
-                    <Link href="/faq" className="nav-link">
-                    FAQ
-                    </Link>              
-
+                    )
+                  })}  
                     <Button
                       variant="primary"
                       className="donate-btn"
