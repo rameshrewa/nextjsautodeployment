@@ -21,7 +21,7 @@ export default function Home() {
         <section id="ashram">
           <Ashram />
         </section>
-        <section>
+         <section>
           <Facilitiesmedia />
         </section>
         <section id="bookastay">

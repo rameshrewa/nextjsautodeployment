@@ -1,4 +1,4 @@
-import Link from "next/Link";
+import Link from 'next/link'
 import { Button } from "react-bootstrap";
 import Image from "next/image";
 import bookStay from "../../public/assets/images/home/bookstay-img.png";
