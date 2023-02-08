@@ -6,8 +6,8 @@ name: development_amplifydeployment
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "test" ]
-    
+    branches: ["test"]
+
   repository_dispatch:
     types: development_amplifydeployment
 
@@ -16,13 +16,12 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  qabuild:
-    deploy:
+  deploy:
   runs-on: ubuntu-latest
   steps:
-  - name: Webhook
-  uses: joelwmale/webhook-action@master
-  with:
-    url: ${{ secrets.WEBHOOK_URL }}
-    headers: '{"Content-Type": "application/json"}'
-    body: '{}'
+    - name: Webhook
+      uses: joelwmale/webhook-action@master
+      with:
+        url: ${{ secrets.WEBHOOK_URL }}
+        headers: '{"Content-Type": "application/json"}'
+        body: "{}"
