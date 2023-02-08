@@ -20,7 +20,9 @@ jobs:
     deploy:
   runs-on: ubuntu-latest
   steps:
-  - name: deploy
-    run: |
-        URL="${{ secrets.WEBHOOK_URL }}"
-        curl -X POST -d {} "$URL" -H "Content-Type: application/json"
+  - name: Webhook
+  uses: joelwmale/webhook-action@master
+  with:
+    url: ${{ secrets.WEBHOOK_URL }}
+    headers: '{"Content-Type": "application/json"}'
+    body: '{}'
