@@ -16,12 +16,21 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  deploy:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Webhook
-      uses: joelwmale/webhook-action@master
-      with:
-        url: ${{ secrets.WEBHOOK_URL }}
-        headers: '{"Content-Type": "application/json"}'
-        body: "{}"
+  qabuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          ref: development
+      - name: Use Node.js 16.15.1
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.15.1
+      - name: npm install
+        run: npm install
+      - name: Webhook
+        uses: joelwmale/webhook-action@master
+        with:
+          url: ${{ secrets.WEBHOOK_URL }}
+          headers: '{"Content-Type": "application/json"}'
+          body: "{}"
